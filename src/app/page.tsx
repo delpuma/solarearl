@@ -1,3 +1,4 @@
+"use client";
 // app/page.tsx
 import Script from "next/script";
 
@@ -220,9 +221,7 @@ export default function Page() {
     </>
   );
 }
-
 /** ---------- Client Component (inline) ---------- */
-"use client";
 
 import { useId, useMemo, useState } from "react";
 
