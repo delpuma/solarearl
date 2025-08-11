@@ -1,6 +1,6 @@
 // app/page.tsx
-import Header from "@/components/Header";
-import Estimate from "@/components/Estimate";
+import Header from "../../components/Header";
+import Estimate from "../../components/Estimate";
 
 export default function Page(){
   return (
