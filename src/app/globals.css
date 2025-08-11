@@ -1,26 +1,53 @@
-/* app/globals.css */
-/* Tailwind (assumes configured) */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Utilities for gradient + cards + buttons + inputs */
-.bg-sun { background: radial-gradient(ellipse at top left, #FFF3CD, #FFEDD5); }
+/* Theme tokens */
+:root{
+  --sun-1:#FFF6D6;
+  --sun-2:#FFE08A;
+  --sun-3:#FFB800;
+  --sea-1:#E8F6FF;
+  --sea-2:#A6D9FF;
+  --ink:#0F172A;    /* slate-900 */
+  --cream:#FFFDF8;
+}
+.bg-cream{ background: var(--cream); }
 
-.card {
-  @apply bg-white rounded-2xl shadow-[0_10px_30px_rgba(17,24,39,.08)] p-5;
+/* Cartoon aesthetic helpers */
+.card{
+  @apply bg-white rounded-3xl shadow-[0_18px_60px_rgba(15,23,42,.10)] p-6;
+}
+.soft-card{
+  @apply rounded-3xl p-6 border border-slate-100 bg-white/80 backdrop-blur;
+  box-shadow: 0 20px 60px rgba(15,23,42,.08), inset 0 1px 0 rgba(255,255,255,.6);
+}
+.btn{
+  @apply inline-flex items-center justify-center px-5 py-3 rounded-2xl font-bold transition-transform active:scale-95;
+}
+.btn-primary{
+  background: linear-gradient(90deg,var(--sun-2),var(--sun-3));
+  color: #1f2937;
+  box-shadow: 0 12px 30px rgba(255,184,0,.35);
+}
+.btn-outline{
+  @apply border-2 border-slate-900 text-slate-900 bg-white;
 }
 
-.btn {
-  @apply inline-flex items-center justify-center px-5 py-3 rounded-xl font-bold no-underline;
+/* Hero gradient + blobs */
+.hero-grad{
+  background:
+    radial-gradient(1200px 700px at -10% -10%, var(--sun-1), transparent 60%),
+    radial-gradient(900px 600px at 110% 10%, var(--sea-1), transparent 55%),
+    linear-gradient(#fff, #fff);
 }
-.btn-primary {
-  background: linear-gradient(90deg,#FFD95A,#FF8A00);
-  color: #111827;
+.blob{
+  position:absolute; inset: auto;
+  filter: blur(40px); opacity:.55; z-index:0;
 }
-.btn-outline {
-  @apply border-2 border-gray-900 text-gray-900 bg-white;
-}
-.input {
-  @apply border rounded-xl px-4 py-3;
-}
+.blob.sun{ width:420px;height:420px; background: var(--sun-2); border-radius: 50%;}
+.blob.sea{ width:460px;height:460px; background: var(--sea-2); border-radius: 46% 54% 60% 40%/58% 52% 48% 42%;}
+.section{ @apply py-16 md:py-24; }
+.section-title{ @apply text-3xl md:text-4xl font-extrabold tracking-tight; }
+.kicker{ @apply uppercase tracking-wider text-xs font-bold text-amber-600; }
+.input{ @apply w-full px-4 py-3 rounded-2xl border border-slate-200 bg-white placeholder-slate-400; }
