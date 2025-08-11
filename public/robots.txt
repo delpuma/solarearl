@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.solarearl.example/sitemap.xml
+Sitemap: https://solarearl.com/sitemap.xml
 
