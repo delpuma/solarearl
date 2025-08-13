@@ -126,7 +126,7 @@ export function ContactSection() {
                       onChange={handleChange}
                       required
                       className="mt-1 border-2 border-gray-200 focus:border-orange-500"
-                      placeholder="(407) 555-0123"
+                      placeholder="(407) 394-8029"
                     />
                   </div>
                 </div>
@@ -224,7 +224,7 @@ export function ContactSection() {
                     </div>
                     <div>
                       <div className="font-semibold text-gray-900">Call or Text</div>
-                      <div className="text-gray-600">(407) SOLAR-FL</div>
+                      <div className="text-gray-600">407-394-8029</div>
                       <div className="text-sm text-gray-500">Available 7 days a week</div>
                     </div>
                   </div>
@@ -235,7 +235,7 @@ export function ContactSection() {
                     </div>
                     <div>
                       <div className="font-semibold text-gray-900">Email</div>
-                      <div className="text-gray-600">earl@solarearl.com</div>
+                      <div className="text-gray-600">Earl.HomeSolutions@gmail.com</div>
                       <div className="text-sm text-gray-500">Response within 4 hours</div>
                     </div>
                   </div>
@@ -272,7 +272,7 @@ export function ContactSection() {
                   System not working? Earl provides 24/7 emergency support for all solar installations.
                 </p>
                 <Button className="bg-white text-green-600 hover:bg-gray-100 font-bold">
-                  Emergency Hotline: (407) 911-SOLAR
+                  Emergency Hotline: 407-394-8029
                 </Button>
               </CardContent>
             </Card>

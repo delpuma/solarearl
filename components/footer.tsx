@@ -84,11 +84,11 @@ export function Footer() {
             <div className="space-y-3 text-gray-300">
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-orange-400" />
-                <span>(407) SOLAR-FL</span>
+                <span>407-394-8029</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-orange-400" />
-                <span>earl@solarearl.com</span>
+                <span>Earl.HomeSolutions@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4 text-orange-400" />
