@@ -69,7 +69,7 @@ export function HeroSection() {
           </div>
 
           <div className="relative">
-            <div className="relative z-10 animate-float">
+            <div className="relative animate-float">
               <Image
                 src="/images/earl-hero.png"
                 alt="Solar Earl - Florida's Friendly Solar Expert"
@@ -80,9 +80,8 @@ export function HeroSection() {
               />
             </div>
 
-            {/* Floating elements */}
             <div
-              className="absolute top-10 right-10 bg-white rounded-full p-4 shadow-lg animate-bounce"
+              className="absolute top-10 right-10 bg-white rounded-full p-4 shadow-lg animate-bounce z-20"
               style={{ animationDelay: "0.5s" }}
             >
               <div className="text-center">
@@ -92,7 +91,7 @@ export function HeroSection() {
             </div>
 
             <div
-              className="absolute bottom-10 left-10 bg-white rounded-full p-4 shadow-lg animate-bounce"
+              className="absolute bottom-10 left-10 bg-white rounded-full p-4 shadow-lg animate-bounce z-20"
               style={{ animationDelay: "1.5s" }}
             >
               <div className="text-center">
